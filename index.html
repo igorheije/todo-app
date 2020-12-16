@@ -22,36 +22,34 @@
         <i src="./images/icon-moon.svg"></i>
       </h1>
       <div class="input">
-        <div></div>
-        <input type="text">
+
+        <input id="input" type="text" placeholder="Create a new todo...">
+        <button onclick="criarTodo()">ADD</button>
       </div>
 
       <div class="todos">
         <ul id="itens">
-          <li>
-            teste
-          </li>
         </ul>
         <div class="container-add">
-          <span>
+          <span id="numberItens">
 
             items left
           </span>
           <div>
 
-            <button onclick="criarTodo()">
+            <button onclick="verTodos()">
               All
             </button>
-            <button>
+            <button onclick="ativos()">
               Active
             </button>
-            <button>
+            <button onclick="completas()">
               Completed
             </button>
           </div>
 
           <button>
-            Clear Completed
+            Clear Completed<i src="./images/icon-cross.svg"></i>
           </button>
         </div>
       </div>
@@ -62,10 +60,6 @@
     </p>
   </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 <script src="index.js">
 </script>
