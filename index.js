@@ -21,6 +21,10 @@ function criarTodo() {
   button.appendChild(excluir)
   span.appendChild(textnode)
   button.onclick = excluirTodo
+  circle.onclick = function({target}) {
+    target.src = "./images/icon-cross.svg"
+    console.log(target.src);
+  }
   
   novaLi.appendChild(circle)
   novaLi.appendChild(span)
